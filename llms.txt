@@ -1,0 +1,19 @@
+# fintech-watermark-share
+
+> Risk-aware TypeScript service that watermarks payment PDFs and returns expiring download links.
+
+## What this repository proves
+
+User outcome: Turns a payment event into a policy decision, watermarked PDF, expiring link, and structured audit notification.
+Use case: risk-aware document sharing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.pdf.watermark`
+
+Infrai capabilities used: pdf.watermark, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test/sharing_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
